@@ -540,10 +540,10 @@
             </div>
             <form class="text-center contactus" style="color:white;" action="//formspree.io/17chiue@gmail.com"
                 method="POST">
-                Message: &nbsp;<input type="text" name="name">
-               <br><br>
-                Email: &nbsp;<input type="email" name="_replyto">
-                <br><br>
+                <input type="email" name="_replyto" placeholder="Your email">
+                <textarea name="message" rows ="5"placeholder="Your message"></textarea>
+                <input type="text" name="_gotcha" style="display:none">
+                <input type="hidden" name="_subject" value="New submission!">
                 <input style=""class="submitbtn" type="submit" value="Send">
             </form> 
             <!--
