@@ -3,7 +3,24 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
+/*$(function() {
+  $('#loading-indicator').hide();  // hide it initially.
+  $(document)  
+    .ajaxStart(function() {
+      $('#loading-indicator').show(); // show on any Ajax event.
+    })
+    .ajaxStop(function() {
+      $('#loading-indicator').hide(); // hide it when it is done.
+  });
+}); */
 
+
+$body = $("body");
+
+$(document).on({
+    ajaxStart: function() { $body.addClass("loading");    },
+     ajaxStop: function() { $body.removeClass("loading"); }    
+});
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
     $('a.page-scroll').bind('click', function(event) {
