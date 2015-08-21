@@ -1,4 +1,4 @@
-.heart {
+/*.heart {
      text-align:center; 
      color: #E41B17;
      font-size: 18px;
@@ -16,6 +16,7 @@
  100% { -webkit-transform: scale(1); }
 }
 
+
 .pulse {
  -webkit-animation-name: 'pulse_animation';
  -webkit-animation-duration: 2500ms;
@@ -23,10 +24,15 @@
  -webkit-animation-iteration-count: infinite;
  -webkit-animation-timing-function: linear;
 }
+*/
+/*
 html, body {
-  width: auto !important;
-  overflow-x: hidden !important;
-}
+  width: auto !important; 
+  
+} 
+*/
+
+
 @media (max-width: 767px) {
     .navbar-fixed-top {
         position: relative;
@@ -36,11 +42,18 @@ html, body {
         max-height: none;
         margin:0;
     }
-    body {
+    
+    html, body {
         margin: 0;
         width:100%;
+        overflow-x: hidden; 
+    }
+
+    .portfolio-modal{
+        overflow-x:scroll;
     }
 }
+
 
 .col-centered{
     float: none;
@@ -70,6 +83,7 @@ form input, form textarea{
     color:black;
 }
 
+
 input, textarea {
     font-size: 0.8em;
     font-family: "source-code-pro", monospace;
@@ -79,6 +93,8 @@ input, textarea {
     transition: all 0.3s ease-in-out;
     width: 100%;
 }
+
+
 /*
 .contactus .submitbtn{
     background-color: #fed136; 
